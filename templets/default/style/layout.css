@@ -692,6 +692,10 @@ dt.light strong{
 /*-------------------------------------------------- 
  list icon
  ---------------------------------------------*/
+ .listicon li{
+	padding-left:18px;
+	background:url(../images/rightnews_icon.png) 7px 13px no-repeat;
+}
 .ico1 li{
 	padding-left:16px;
 	background:url(../images/ico-1.gif) 7px 11px no-repeat;

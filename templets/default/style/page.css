@@ -115,6 +115,97 @@
 	margin:0px 2px;
 }
 /*---------- index ---------*/
+.index .banner {
+	background:url(../images/index_bannerbg.png) center center repeat;
+	height:366px;
+	margin-top: -10px;
+}
+.index .banner .left{
+	width:673px;
+	margin-left: 20px;
+	float:left;
+	overflow:hidden;
+	height: 366px;
+}
+.index .banner .left img{ margin:0px;}
+
+.index .banner .rightnews{
+	width:287px;
+	height:366px;
+	background:url(../images/banner_rightnews_bg.png) center center repeat;
+	float:right;
+	margin-right: 20px;
+	overflow:hidden;
+}
+.index .banner .rightnews a{
+	color:#ffffff;
+}
+.index .banner .rightnews .onenews{
+	margin:0 3px 0 3px;
+	padding:7px 6px;
+	border-bottom:1px dashed #EBEBEB;
+}
+.index .banner .rightnews .onenews h2{
+	text-align:center;
+	display:block;
+	height:32px;
+	line-height:28px;
+}
+.index .banner .rightnews .onenews h2 a{
+	font-size:16px;
+}
+.index .banner .rightnews .onenews p{
+	line-height:19px;
+	color:#666;
+}
+
+.index .banner .rightnews div.newarticle{
+	height:37px;
+	background:url(../images/banner_rightnews_title.png) repeat-x;
+	border-bottom: 1px solid #105caa;
+	font-family: "方正大标宋简体";
+	font-size:14px;
+	color:#ffffff;
+	padding-left: 20px;
+	line-height: 37px;
+}
+
+.index .banner .rightnews div.d1{
+	padding:6px 10px;
+	clear:both;
+	width:406px;
+	overflow:hidden;
+}
+.index .banner .rightnews div.d1arc{
+	margin-right:12px;
+	width:190px;
+	float:left;
+	height:24px;
+	line-height:24px;
+	overflow:hidden;
+}
+.index .banner .rightnews div.d1arc a {
+	
+}
+.index .banner .rightnews ul.liststyle{
+	width:90%;
+	padding:6px 0 0 0px;
+	clear:both;
+	overflow:hidden;
+}
+.index .banner .rightnews ul.liststyle li{
+	width:88%;
+	margin-right:1%;
+	float:left;
+	height:27px;
+	line-height:27px;
+	overflow:hidden;
+}
+.index .banner .rightnews ul.liststyle a {
+	font-size:12px;
+}
+
+
 .index .bignews{
 	width:424px;
 	height:400px;
