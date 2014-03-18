@@ -118,7 +118,7 @@
 .index .banner {
 	background:url(../images/index_bannerbg.png) center center repeat;
 	height:366px;
-	margin-top: -10px;
+	margin-top: 0px;
 }
 .index .banner .left{
 	width:673px;
@@ -295,6 +295,140 @@
 	*margin-top:12px;
 	_margin-top:0px;
 }
+.lec_notice{
+	width:960px;
+	background-color: #f0f0f0;
+	padding: 50px 20px 50px 20px;
+	float:left;
+	clear:both;
+	overflow:hidden;	
+}
+.noticebox{
+	width:180px;
+	height: 120px;
+	float:left;
+	clear:both;
+	overflow:hidden;
+}
+.index .noticebox dl{
+	width:180px;
+	margin-right:10px;
+	margin-top:0px;
+	float:left;
+}
+.index .noticebox ul a{
+	color:#ffffff;
+}
+.serviceno{
+	width:240px;
+	height: 120px;
+	margin-left: 15px; 
+	background:url(../images/serviceno.png) no-repeat;
+	float:left;
+	overflow:hidden;
+}
+.lec_signup{
+	width:525px;
+	height: 120px;
+	background-color: #ffffff;
+	float:left;
+	overflow:hidden;
+}
+.lec_signup .lecinfo{
+	width:318px;
+	height: 120px;
+	margin-left: 25px;
+	float:left;
+}
+.lec_signup .lecinfo .title{
+	font-size: 18px;
+	padding: 10px 0px 10px 0px;
+	color: #000000;
+	font-weight: bold;
+	float:left;
+}
+.lec_signup .lecinfo span{
+	line-height: 20px;
+	font-size: 12px ;
+	font-family: 宋体;
+	color: #777777;
+	float:left;
+}
+
+.lec_signup .signup{
+	width:157px;
+	height: 120px;
+	margin-left: 25px;
+	float:left;
+	overflow:hidden;
+}
+.lec_signup .signup span{
+	background: url(../images/datebtn.png) no-repeat;
+	width: 127px;
+	padding: 0 1px 0 1px; 
+	height: 31px;
+	margin-top: 20px;
+	float:left;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 30px;
+	font-family: 方正大标宋简体 ;
+}
+.lec_signup .signup a{
+	margin-top: 20px;	
+	float:left;
+}
+.subsection{
+	width:960px;
+	background-color: #ffffff;
+	padding: 25px 20px 25px 20px;
+	float:left;
+	clear:both;
+	overflow:hidden;	
+}
+.subsection .subsec_list{
+	width:376px;
+	height:160px;
+	background: url(../images/secbg.png) repeat-x;
+	margin-top: 0px;
+	float:left;
+	overflow:hidden;
+}
+.subsection .subsec_list div.secnumber{
+	height:28px;
+	font-family: 宋体;
+	font-size:12px;
+	color:#ffffff;
+	padding-left: 290px;
+	line-height: 30px;
+}
+.subsection .subsec_list strong{
+	height:24px;
+	font-family: 黑体;
+	font-size:24px;
+	color:#ffffff;
+	padding: 20px 0 0 25px;
+	line-height: 37px;
+}
+.subsection .subsec_list ul{
+	width:85%;
+	padding:6px 0 0 0px;
+	clear:both;
+	overflow:hidden;
+	
+}
+.subsection .subsec_list ul li{
+	width: 50%;
+	height:24px;
+	font-family: 宋体;
+	font-size:12px;
+	color:#ffffff;
+	line-height: 37px;
+	float:left;
+	overflow:hidden;
+}
+
+
 .listbox{
 	width:720px;
 	overflow:hidden;

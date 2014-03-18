@@ -1,132 +1,213 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
-<title>{dede:global.cfg_webname/}</title>
-<meta name="description" content="{dede:global.cfg_description/}" />
-<meta name="keywords" content="{dede:global.cfg_keywords/}" />
-<link href="{dede:global.cfg_templets_skin/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
-<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
-<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/images/js/j.js" ></script>
-<script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/pic_scroll.js"></script>
-<script language="javascript" type="text/javascript">
+  <meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+  <title>{dede:global.cfg_webname/}</title>
+  <meta name="description" content="{dede:global.cfg_description/}" />
+  <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+  <link href="{dede:global.cfg_templets_skin/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+  <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+  <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/images/js/j.js" ></script>
+  <script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/pic_scroll.js"></script>
+  <script language="javascript" type="text/javascript">
 <!--
-	$(function(){
-		$("a[_for]").mouseover(function(){
-			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
-			$(this).addClass("thisclass").blur();
-			$("#"+$(this).attr("_for")).show();
-		});
-		$("a[_for=uc_member]").mouseover();
-		$("a[_for=flink_1]").mouseover();
-	});
-	
-	function CheckLogin(){
-	  var taget_obj = document.getElementById('_userlogin');
-	  myajax = new DedeAjax(taget_obj,false,false,'','','');
-	  myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta.php");
-	  DedeXHTTP = null;
-	}
+  $(function(){
+    $("a[_for]").mouseover(function(){
+      $(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+      $(this).addClass("thisclass").blur();
+      $("#"+$(this).attr("_for")).show();
+    });
+    $("a[_for=uc_member]").mouseover();
+    $("a[_for=flink_1]").mouseover();
+  });
+  
+  function CheckLogin(){
+    var taget_obj = document.getElementById('_userlogin');
+    myajax = new DedeAjax(taget_obj,false,false,'','','');
+    myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta.php");
+    DedeXHTTP = null;
+  }
 -->
 </script>
 </head>
 <body class="index">
-{dede:include filename="head.htm"/}
-<!-- /header -->
-<div class="w1000 clear">
- <div class="banner">
-  <div class="left">
-      <img src="../train/templets/default/images/index_banner.png" />
-  </div>
-  <div class="rightnews">
-   <!--头条-->
-   <!--div class="onenews"> {dede:arclist flag='h' limit='0,1' infolen='230'}
-    <h2><a href="[field:arcurl/]">[field:title/]</a></h2>
-    <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
-    {/dede:arclist} </div-->
-   <!-- /onenews -->
-   <!--div class="d1"> {dede:arclist flag='h' limit='1,4'}
-    <div class='d1arc'><a href="[field:arcurl/]">[field:title/]</a></div>
-    {/dede:arclist} </div-->
-   <!--/头条-->
-   <div class='newarticle'>最新文章</div>
-   <ul class="liststyle listicon">
-    <!--最新文档-->
-    {dede:arclist row=14 titlelen=32 noflag='h'}
-    <li><a href="[field:arcurl/]">[field:title/]</a></li>
-    {/dede:arclist}
-    <!--//最新文档-->
-   </ul>
+  {dede:include filename="head.htm"/}
+  <!-- /header -->
+  <div class="w1000 clear">
+    <div class="banner">
+      <div class="left">
+        <img src="{dede:global.cfg_templets_skin/}/images/index_banner.png" />
+      </div>
+      <div class="rightnews">
+        <!--头条-->
+        <!--div class="onenews">
+        {dede:arclist flag='h' limit='0,1' infolen='230'}
+        <h2>
+          <a href="[field:arcurl/]">[field:title/]</a>
+        </h2>
+        <p>
+          [field:info/]...
+          <a href="[field:arcurl/]">[查看全文]</a>
+        </p>
+        {/dede:arclist}
+      </div-->
+      <!-- /onenews -->
+      <!--div class="d1">
+      {dede:arclist flag='h' limit='1,4'}
+      <div class='d1arc'>
+        <a href="[field:arcurl/]">[field:title/]</a>
+      </div>
+      {/dede:arclist}
+    </div-->
+    <!--/头条-->
+    <div class='newarticle'>最新文章</div>
+    <ul class="liststyle listicon">
+      <!--最新文档-->
+      {dede:arclist row=14 titlelen=32 noflag='h'}
+      <li>
+        <a href="[field:arcurl/]">[field:title/]</a>
+      </li>
+      {/dede:arclist}
+      <!--//最新文档--> </ul>
   </div>
   <!-- /rightnews -->
   <!--div class="latestnews">
-   <dl class="tbox light">
-    <dt class="light"><strong>特别推荐</strong></dt>
+  <dl class="tbox light">
+    <dt class="light"> <strong>特别推荐</strong>
+    </dt>
     <dd class="light">
-     <ul class="d2 ico2">
-      {dede:arclist flag='a' row='6' orderby='pubdate'}
-      <li><span>[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl/]">[field:title/]</a></li>
-      {/dede:arclist}
-     </ul>
-    </dd>
-   </dl>
-  </div-->
-  <!-- /latestnews -->
-  <div class="picnews">
-   <dl class="tbox light">
-    <dt class='light'><strong>图文资讯</strong></dt>
-    <dd class='light'>
-     <div class="infiniteCarousel">
-      <div class="wrapper">
-       <ul id='imgscroll'>
-        {dede:arclist row=10 orderby=pubdate type='image.' imgwidth='143' imgheight='106'}
-        <li><a href="[field:arcurl/]">[field:image/]<span class="title">[field:title/]</span></a></li>
+      <ul class="d2 ico2">
+        {dede:arclist flag='a' row='6' orderby='pubdate'}
+        <li>
+          <span>[field:pubdate function="MyDate('m-d',@me)"/]</span>
+          <a href="[field:arcurl/]">[field:title/]</a>
+        </li>
         {/dede:arclist}
-       </ul>
+      </ul>
+    </dd>
+  </dl>
+</div-->
+<!-- /latestnews -->
+<!--div class="picnews">
+<dl class="tbox light">
+  <dt class='light'> <strong>图文资讯</strong>
+  </dt>
+  <dd class='light'>
+    <div class="infiniteCarousel">
+      <div class="wrapper">
+        <ul id='imgscroll'>
+          {dede:arclist row=10 orderby=pubdate type='image.' imgwidth='143' imgheight='106'}
+          <li>
+            <a href="[field:arcurl/]">
+              [field:image/]
+              <span class="title">[field:title/]</span>
+            </a>
+          </li>
+          {/dede:arclist}
+        </ul>
       </div>
-     </div>
-    </dd>
-   </dl>
-  </div>
-  <div id="leftAD1" style="margin:10px auto">{dede:myad name='indexLeftBanner'/}</div>
-  <!-- /picnews -->
-  <div class="listbox"> {dede:channelartlist}
-   <dl class="tbox">
-    <dt><strong><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></strong><span class="more"><a href="{dede:field name='typeurl'/}">更多...</a></span></dt>
-    <dd>
-     <ul class="d1 ico3">
+    </div>
+  </dd>
+</dl>
+</div-->
+<!--div id="leftAD1" style="margin:10px auto">{dede:myad name='indexLeftBanner'/}</div-->
+<!-- /picnews -->
+<!--div class="listbox">
+{dede:channelartlist}
+<dl class="tbox">
+  <dt> <strong><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></strong> 
+    <span class="more">
+      <a href="{dede:field name='typeurl'/}">更多...</a>
+    </span>
+  </dt>
+  <dd>
+    <ul class="d1 ico3">
       {dede:arclist titlelen='60' row='8'}
-      <li><span>[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl /]">[field:title /]</a></li>
+      <li>
+        <span>[field:pubdate function="MyDate('m-d',@me)"/]</span>
+        <a href="[field:arcurl /]">[field:title /]</a>
+      </li>
       {/dede:arclist}
-     </ul>
-    </dd>
-   </dl>
-   {/dede:channelartlist} </div>
-  <!-- /listbox -->
- </div>
- <!-- /pleft -->
-
-</div>
-<div class="flink w960 center clear">
- <dl class="tbox">
-  <dt> <strong>友情链接</strong>
-	<span class="linklabel">
-		{dede:flinktype type="dedecms"}
-			<a href="#" _for="flink_[field:id/]">[field:typename/]</a> 
-		{/dede:flinktype}
-	</span>
-	<span class="more"> <a href="plus/flink.php">所有链接</a> | <a href="plus/flink_add.php">申请加入</a> </span> </dt>
-  {dede:flinktype type="dedecms"}
-  <dd id="flink_[field:id/]">
-    <ul class="f5">
-		{dede:flink/}
     </ul>
   </dd>
-  {/dede:flinktype}
- </dl>
+</dl>
+{/dede:channelartlist}
+</div -->
+<!-- /listbox -->
 </div>
+<!-- /pleft -->
+<div class="lec_notice">
+  <div class="noticebox">
+    {dede:channelartlist}
+    <dl class="nbox">
+      <dt> <strong><a href="{dede:field name='typeurl'/}">讲座公告</a></strong> 
+        <span class="more">
+          <a href="{dede:field name='typeurl'/}">更多></a>
+        </span>
+      </dt>
+    </dl>
+    {/dede:channelartlist}
+  </div>
+  <div class="serviceno"></div>
+  <div class="lec_signup">
+    <div class="lecinfo">
+      <div class="title">后勤报修投诉平台用户培训讲座</div>
+      <span>
+        为方便师生进行网上报修，信息化处携手后勤集团，整合了
+水、电、暖、网络、固定电话、一卡通等维修类别中师生报
+修率最高的若干报修项目，使报修申请人只需登录.
+      </span>
+    </div>
+    <div class="signup">
+      <span>2013年04月06日</span>
+      <a href="http://www.baidu.com">
+        <img src="{dede:global.cfg_templets_skin/}/images/signbtn.png"></a>
+    </div>
+  </div>
+</div>
+<!-- /notice -->
+<div class="subsection">
+  <div class="subsec_list">
+    <div class='secnumber'>共4门课程</div>
+      {dede:channelartlist typeid='8,8'} 
+      <strong><!--a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a-->
+          网络基础服务
+      </strong> 
+      <ul>
+        {dede:channel type='son' noself='yes'}
+        <li>
+          <a href="[field:typelink/]">[field:typename/]</a>
+        </li>
+        {/dede:channel}
+      </ul>
+      {/dede:channelartlist}
+    </div>
+  </div>
+</div>
+
+<!--div class="flink w960 center clear">
+  <dl class="tbox">
+    <dt> <strong>友情链接</strong>
+      <span class="linklabel">
+        {dede:flinktype type="dedecms"}
+        <a href="#" _for="flink_[field:id/]">[field:typename/]</a>
+        {/dede:flinktype}
+      </span>
+      <span class="more">
+        <a href="plus/flink.php">所有链接</a>
+        |
+        <a href="plus/flink_add.php">申请加入</a>
+      </span>
+    </dt>
+    {dede:flinktype type="dedecms"}
+    <dd id="flink_[field:id/]">
+      <ul class="f5">{dede:flink/}</ul>
+    </dd>
+    {/dede:flinktype}
+  </dl>
+</div-->
 <!-- /flink -->
-<div id="footAD" style="margin:10px auto; width:726px">{dede:myad name='indexfooterAD'/}</div>
+<!--div id="footAD" style="margin:10px auto; width:726px">{dede:myad name='indexfooterAD'/}</div-->
 {dede:include filename="footer.htm"/}
 <!-- /footer -->
 </body>

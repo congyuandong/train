@@ -7,6 +7,49 @@
  box base
  ---------------------------------------------*/
 /* 自适应宽度的块(通用块) */
+.nbox{
+	margin:0 0 0px 0;
+	overflow:hidden;
+}
+.nbox dt{
+	background-color: #105caa;
+	height:120px;
+	padding-left: 40px;
+	overflow:hidden;
+	clear:both;
+}
+.nbox dt strong{
+	height:24px;
+	display:block;
+	float:left;
+	font: 24px "黑体",Verdana,Arial,Tahoma;
+	color:#ffffff;
+	letter-spacing:1px;
+}
+.nbox dt strong a{
+	line-height:80px; !important;
+	color:#ffffff;
+}
+.nbox dt strong a:hover{
+	color:#ffffff;
+	text-decoration:none;
+}
+.nbox dt span.more{
+	float:right;
+	position:relative;
+	margin: 50px 42px 0 0;
+	font: 12px "宋体";
+	font-weight: bold;
+	color:#ffffff;
+}
+.nbox dt span.more a{
+	color:#ffffff;
+	text-decoration:none;
+}
+.nbox dt span.more a:hover{
+	color:#f0f0f0;
+	text-decoration:underline;
+}
 
 .tbox{
 	margin:0 0 8px 0;
