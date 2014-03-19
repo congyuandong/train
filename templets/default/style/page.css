@@ -386,15 +386,33 @@
 	clear:both;
 	overflow:hidden;	
 }
-.subsection .subsec_list{
-	width:376px;
-	height:160px;
-	background: url(../images/secbg.png) repeat-x;
+.graybg{
+	background-color: #f0f0f0 !important;	
+}
+.subsection .subsecleft{
+	width:378px;
+	height:362px;
 	margin-top: 0px;
 	float:left;
 	overflow:hidden;
 }
-.subsection .subsec_list div.secnumber{
+.subsection .subsec_list1{
+	width:378px;
+	height:160px;
+	background: url(../images/secbg1.png) repeat-x;
+	margin-top: 0px;
+	float:left;
+	overflow:hidden;
+}
+.subsection .subsec_list2{
+	width:378px;
+	height:160px;
+	background: url(../images/secbg2.png) repeat-x;
+	margin-top: 0px;
+	float:left;
+	overflow:hidden;
+}
+.subsection .secnumber{
 	height:28px;
 	font-family: 宋体;
 	font-size:12px;
@@ -402,7 +420,7 @@
 	padding-left: 290px;
 	line-height: 30px;
 }
-.subsection .subsec_list strong{
+.subsection  strong{
 	height:24px;
 	font-family: 黑体;
 	font-size:24px;
@@ -410,14 +428,14 @@
 	padding: 20px 0 0 25px;
 	line-height: 37px;
 }
-.subsection .subsec_list ul{
+.subsection  ul{
 	width:85%;
 	padding:6px 0 0 0px;
 	clear:both;
 	overflow:hidden;
 	
 }
-.subsection .subsec_list ul li{
+.subsection  ul li{
 	width: 50%;
 	height:24px;
 	font-family: 宋体;
@@ -427,7 +445,61 @@
 	float:left;
 	overflow:hidden;
 }
-
+.subsection  ul li a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.subsection  ul li a:hover{
+	color: #0b4a00;
+}
+.subsection .subsec_show{
+	width: 100%;
+	height:180px;
+	margin-top: 185px;
+}
+.subsection .subsec_show .lshow {
+	width: 47%;
+	margin-right: 11px;
+	float:left;
+}
+.subsection .subsec_show .rshow {
+	width: 47%;
+	margin-left: 11px; 
+	float:left;
+}
+.subsection  img{
+	margin-bottom: 5px;
+}
+.subsection span{
+	font-family: 黑体;
+	font-size:12px;
+	color:#000000;
+	line-height: 24px;
+	display: block;;
+	overflow:hidden;
+}
+.subsection .suseccenter{
+	width:378px;
+	height:362px;
+	margin-left: 12px;
+	margin-top: 9px;
+	float:left;
+	overflow:hidden;
+}
+.subsection .suseccenter .secshow{
+	width:50%;
+	height:50%;
+	float:left;
+	overflow:hidden;
+}
+.subsection .subsecright{
+	width:180px;
+	height:362px;
+	margin-top: 9px;
+	margin-left: 12px;
+	float:left;
+	overflow:hidden;
+}
 
 .listbox{
 	width:720px;

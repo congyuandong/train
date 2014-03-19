@@ -651,9 +651,10 @@ input,select,button{
 /*---------- frame : footer ---------*/
 .footer{
 	margin:auto;
-	color:#999;
+	color:#383839;
+	background-color: #e4e3e3;
 	text-align:center;
-	margin-top:8px;
+	margin-top:0px;
 	padding-bottom:10px;
 	border-top:1px solid #E5EFD6;
 	padding-top:10px;
@@ -677,7 +678,7 @@ input,select,button{
 	color:#F93;
 }
 .footer .copyright{
-	color:#666666;
+	color:#383839;
 	line-height:23px;
 }
 

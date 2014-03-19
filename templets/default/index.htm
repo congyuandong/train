@@ -39,157 +39,176 @@
         <img src="{dede:global.cfg_templets_skin/}/images/index_banner.png" />
       </div>
       <div class="rightnews">
-        <!--头条-->
-        <!--div class="onenews">
-        {dede:arclist flag='h' limit='0,1' infolen='230'}
-        <h2>
-          <a href="[field:arcurl/]">[field:title/]</a>
-        </h2>
-        <p>
-          [field:info/]...
-          <a href="[field:arcurl/]">[查看全文]</a>
-        </p>
-        {/dede:arclist}
-      </div-->
-      <!-- /onenews -->
-      <!--div class="d1">
-      {dede:arclist flag='h' limit='1,4'}
-      <div class='d1arc'>
-        <a href="[field:arcurl/]">[field:title/]</a>
-      </div>
-      {/dede:arclist}
-    </div-->
-    <!--/头条-->
-    <div class='newarticle'>最新文章</div>
-    <ul class="liststyle listicon">
-      <!--最新文档-->
-      {dede:arclist row=14 titlelen=32 noflag='h'}
-      <li>
-        <a href="[field:arcurl/]">[field:title/]</a>
-      </li>
-      {/dede:arclist}
-      <!--//最新文档--> </ul>
-  </div>
-  <!-- /rightnews -->
-  <!--div class="latestnews">
-  <dl class="tbox light">
-    <dt class="light"> <strong>特别推荐</strong>
-    </dt>
-    <dd class="light">
-      <ul class="d2 ico2">
-        {dede:arclist flag='a' row='6' orderby='pubdate'}
-        <li>
-          <span>[field:pubdate function="MyDate('m-d',@me)"/]</span>
-          <a href="[field:arcurl/]">[field:title/]</a>
-        </li>
-        {/dede:arclist}
-      </ul>
-    </dd>
-  </dl>
-</div-->
-<!-- /latestnews -->
-<!--div class="picnews">
-<dl class="tbox light">
-  <dt class='light'> <strong>图文资讯</strong>
-  </dt>
-  <dd class='light'>
-    <div class="infiniteCarousel">
-      <div class="wrapper">
-        <ul id='imgscroll'>
-          {dede:arclist row=10 orderby=pubdate type='image.' imgwidth='143' imgheight='106'}
+        <div class='newarticle'>最新文章</div>
+        <ul class="liststyle listicon">
+          <!--最新文档-->
+          {dede:arclist row=14 titlelen=32 noflag='h'}
           <li>
-            <a href="[field:arcurl/]">
-              [field:image/]
-              <span class="title">[field:title/]</span>
-            </a>
+            <a href="[field:arcurl/]">[field:title/]</a>
           </li>
           {/dede:arclist}
-        </ul>
+          <!--//最新文档--> </ul>
       </div>
     </div>
-  </dd>
-</dl>
-</div-->
-<!--div id="leftAD1" style="margin:10px auto">{dede:myad name='indexLeftBanner'/}</div-->
-<!-- /picnews -->
-<!--div class="listbox">
-{dede:channelartlist}
-<dl class="tbox">
-  <dt> <strong><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></strong> 
-    <span class="more">
-      <a href="{dede:field name='typeurl'/}">更多...</a>
-    </span>
-  </dt>
-  <dd>
-    <ul class="d1 ico3">
-      {dede:arclist titlelen='60' row='8'}
-      <li>
-        <span>[field:pubdate function="MyDate('m-d',@me)"/]</span>
-        <a href="[field:arcurl /]">[field:title /]</a>
-      </li>
-      {/dede:arclist}
-    </ul>
-  </dd>
-</dl>
-{/dede:channelartlist}
-</div -->
-<!-- /listbox -->
-</div>
-<!-- /pleft -->
-<div class="lec_notice">
-  <div class="noticebox">
-    {dede:channelartlist}
-    <dl class="nbox">
-      <dt> <strong><a href="{dede:field name='typeurl'/}">讲座公告</a></strong> 
-        <span class="more">
-          <a href="{dede:field name='typeurl'/}">更多></a>
-        </span>
-      </dt>
-    </dl>
-    {/dede:channelartlist}
-  </div>
-  <div class="serviceno"></div>
-  <div class="lec_signup">
-    <div class="lecinfo">
-      <div class="title">后勤报修投诉平台用户培训讲座</div>
-      <span>
-        为方便师生进行网上报修，信息化处携手后勤集团，整合了
+    <!-- /pleft -->
+    <div class="lec_notice">
+      <div class="noticebox">
+        {dede:channelartlist}
+        <dl class="nbox">
+          <dt> <strong><a href="{dede:field name='typeurl'/}">讲座公告</a></strong> 
+            <span class="more">
+              <a href="{dede:field name='typeurl'/}">更多></a>
+            </span>
+          </dt>
+        </dl>
+        {/dede:channelartlist}
+      </div>
+      <div class="serviceno"></div>
+      <div class="lec_signup">
+        <div class="lecinfo">
+          <div class="title">后勤报修投诉平台用户培训讲座</div>
+          <span>
+            为方便师生进行网上报修，信息化处携手后勤集团，整合了
 水、电、暖、网络、固定电话、一卡通等维修类别中师生报
 修率最高的若干报修项目，使报修申请人只需登录.
-      </span>
+          </span>
+        </div>
+        <div class="signup">
+          <span>2013年04月06日</span>
+          <a href="http://www.baidu.com">
+            <img src="{dede:global.cfg_templets_skin/}/images/signbtn.png"></a>
+        </div>
+      </div>
     </div>
-    <div class="signup">
-      <span>2013年04月06日</span>
-      <a href="http://www.baidu.com">
-        <img src="{dede:global.cfg_templets_skin/}/images/signbtn.png"></a>
+    <!-- /notice -->
+    <div class="subsection">
+      <div class="subsecleft">
+        <div class="subsec_list1">
+          {dede:type typeid='7'}
+          <div class='secnumber'>共[field:id function="getTypeArcLength(@me,false)"/]门课程</div>
+          {/dede:type} <strong>网络基础服务</strong>
+          {dede:arclist typeid='7'}
+          <ul>
+            <li>[field:textlink/]</li>
+          </ul>
+          {/dede:arclist}
+        </div>
+        <div class="subsec_show">
+          <div class="lshow">
+            <a href="{dede:global.cfg_basehost/}">
+              <img src="{dede:global.cfg_templets_skin/}/images/sectest1.png" height="100" width="180" alt="{dede:global.cfg_webname/}"/>
+            </a>
+            <span>校园公寓网基础知识讲座</span>
+            <span>王萌</span>
+            <span>2013年12月</span>
+          </div>
+          <div class="rshow">
+            <a href="{dede:global.cfg_basehost/}">
+              <img src="{dede:global.cfg_templets_skin/}/images/sectest2.png" height="100" width="180" alt="{dede:global.cfg_webname/}"/>
+            </a>
+            <span>计算机使用基础知识讲座</span>
+            <span>王萌</span>
+            <span>2014年4月</span>
+          </div>
+        </div>
+      </div>
+      <div class="suseccenter">
+        <a href="{dede:global.cfg_basehost/}">
+          <img src="{dede:global.cfg_templets_skin/}/images/sectest3.png" height="276" width="378" alt="{dede:global.cfg_webname/}"/>
+        </a>
+        <span>计算机使用基础知识讲座</span>
+        <span>王萌</span>
+        <span>2014年4月</span>
+      </div>
+      <div class="subsecright">
+        <a href="{dede:global.cfg_basehost/}">
+          <img src="{dede:global.cfg_templets_skin/}/images/sectest4.png" height="276" width="180" alt="{dede:global.cfg_webname/}"/>
+        </a>
+        <span>计算机使用基础知识讲座</span>
+        <span>王萌</span>
+        <span>2014年4月</span>
+      </div>
+    </div>
+    <div class="subsection graybg">
+      <div class="subsecleft">
+        <div class="subsec_list2">
+          {dede:type typeid='7'}
+          <div class='secnumber'>共[field:id function="getTypeArcLength(@me,false)"/]门课程</div>
+          {/dede:type}
+          <strong>网络基础服务</strong>
+          {dede:arclist typeid='7'}
+          <ul>
+            <li>[field:textlink/]</li>
+          </ul>
+          {/dede:arclist}
+        </div>
+        <div class="subsec_show">
+          <div class="lshow">
+            <a href="{dede:global.cfg_basehost/}">
+              <img src="{dede:global.cfg_templets_skin/}/images/sectest1.png" height="100" width="180" alt="{dede:global.cfg_webname/}"/>
+            </a>
+            <span>校园公寓网基础知识讲座</span>
+            <span>王萌</span>
+            <span>2013年12月</span>
+          </div>
+          <div class="rshow">
+            <a href="{dede:global.cfg_basehost/}">
+              <img src="{dede:global.cfg_templets_skin/}/images/sectest2.png" height="100" width="180" alt="{dede:global.cfg_webname/}"/>
+            </a>
+            <span>计算机使用基础知识讲座</span>
+            <span>王萌</span>
+            <span>2014年4月</span>
+          </div>
+        </div>
+      </div>
+      <div class="suseccenter">
+        <div class="secshow">
+          <a href="{dede:global.cfg_basehost/}">
+            <img src="{dede:global.cfg_templets_skin/}/images/sectest9.png" height="100" width="180" alt="{dede:global.cfg_webname/}"/>
+          </a>
+          <span>计算机使用基础知识讲座</span>
+          <span>王萌</span>
+          <span>2014年4月</span>
+        </div>
+        <div class="secshow">
+          <a href="{dede:global.cfg_basehost/}">
+            <img src="{dede:global.cfg_templets_skin/}/images/sectest9.png" height="100" width="180" alt="{dede:global.cfg_webname/}"/>
+          </a>
+          <span>计算机使用基础知识讲座</span>
+          <span>王萌</span>
+          <span>2014年4月</span>
+        </div>
+        <div class="secshow">
+          <a href="{dede:global.cfg_basehost/}">
+            <img src="{dede:global.cfg_templets_skin/}/images/sectest9.png" height="100" width="180" alt="{dede:global.cfg_webname/}"/>
+          </a>
+          <span>计算机使用基础知识讲座</span>
+          <span>王萌</span>
+          <span>2014年4月</span>
+        </div>
+        <div class="secshow">
+          <a href="{dede:global.cfg_basehost/}">
+            <img src="{dede:global.cfg_templets_skin/}/images/sectest9.png" height="100" width="180" alt="{dede:global.cfg_webname/}"/>
+          </a>
+          <span>计算机使用基础知识讲座</span>
+          <span>王萌</span>
+          <span>2014年4月</span>
+        </div>
+      </div>
+      <div class="subsecright">
+        <a href="{dede:global.cfg_basehost/}">
+          <img src="{dede:global.cfg_templets_skin/}/images/sectest11.png" height="276" width="180" alt="{dede:global.cfg_webname/}"/>
+        </a>
+        <span>计算机使用基础知识讲座</span>
+        <span>王萌</span>
+        <span>2014年4月</span>
+      </div>
     </div>
   </div>
-</div>
-<!-- /notice -->
-<div class="subsection">
-  
-  <div class="subsec_list">
-    {dede:type typeid='7'}
-    <div class='secnumber'>共[field:id function="getTypeArcLength(@me,false)"/]门课程</div>
-    {/dede:type}
-      <strong>
-          网络基础服务
-      </strong>
-       {dede:arclist typeid='7'} 
-      <ul>
-        <li>
-          [field:textlink/]
-        </li>
-      </ul>
-       {/dede:arclist}
-    </div>
-   
-  </div>
-</div> 
-
-<!--div class="flink w960 center clear">
+  <!--div class="flink w960 center clear">
   <dl class="tbox">
-    <dt> <strong>友情链接</strong>
+    <dt>
+      <strong>友情链接</strong>
       <span class="linklabel">
         {dede:flinktype type="dedecms"}
         <a href="#" _for="flink_[field:id/]">[field:typename/]</a>
