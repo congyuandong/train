@@ -167,23 +167,25 @@
 </div>
 <!-- /notice -->
 <div class="subsection">
+  
   <div class="subsec_list">
-    <div class='secnumber'>共4门课程</div>
-      {dede:channelartlist typeid='8,8'} 
-      <strong><!--a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a-->
+    {dede:type typeid='7'}
+    <div class='secnumber'>共[field:id function="getTypeArcLength(@me,false)"/]门课程</div>
+    {/dede:type}
+      <strong>
           网络基础服务
-      </strong> 
+      </strong>
+       {dede:arclist typeid='7'} 
       <ul>
-        {dede:channel type='son' noself='yes'}
         <li>
-          <a href="[field:typelink/]">[field:typename/]</a>
+          [field:textlink/]
         </li>
-        {/dede:channel}
       </ul>
-      {/dede:channelartlist}
+       {/dede:arclist}
     </div>
+   
   </div>
-</div>
+</div> 
 
 <!--div class="flink w960 center clear">
   <dl class="tbox">
