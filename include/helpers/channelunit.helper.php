@@ -779,3 +779,24 @@ function WriteCacheBlock($cacheid, $str)
     $str = fwrite($fp, $str);
     fclose($fp);
 }
+
+/**
+ * 获取指定栏目下面的文章数量
+ *
+ * @param     string  $id  栏目id
+ * @param     string  $addthis  是否包含子栏目
+ * @return    string
+*/
+if ( ! function_exists('getTypeArcLength')) {
+    function getTypeArcLength($id,$addson=true) {
+        global $dsql;
+        if($addson) {       
+            $types = GetSonIds($id);                
+            $sql = "SELECT count(id) as len FROM dede_arctiny where typeid IN ($types)";
+        } else {
+            $sql = "SELECT count(id) as len FROM dede_arctiny where typeid = $id";
+        }
+        $arclen = $dsql->GetOne($sql);
+        return $arclen['len'];
+    }
+}
