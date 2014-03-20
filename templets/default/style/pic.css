@@ -40,10 +40,10 @@
 /******************** home ********************/
 	/**/
 	.ps_box { margin-bottom:50px;}
-	.pics_switch { position:relative; width:1600px; margin:auto; height:580px; background:#1b1c24; overflow:hidden;}
+	.pics_switch { position:relative; width:693px; margin:auto; height:366px; background:#1b1c24; overflow:hidden;}
 	.pics_switch .pb { height:580px;}
-	.pics_switch .pic_box { /*position:absolute; left:0; top:0;*/ float:left; width:1600px; height:580px; overflow:hidden;}
-	.pics_switch .pic_box a { margin:auto; display:block; width:1600px; height:580px;}
+	.pics_switch .pic_box { /*position:absolute; left:0; top:0;*/ float:left; width:693px; height:366px; overflow:hidden;}
+	.pics_switch .pic_box a { margin:auto; display:block; width:693px; height:366px;}
 	
 	/*左右翻页箭头*/
 	.viewArrows { display:block; width:50px; height:50px; line-height:50px; cursor:pointer; text-indent:-99999999px; position:absolute; top:269px;}
@@ -62,7 +62,7 @@
 	.pic_box_style_5 { background:#101117;}
 	.pic_box_style_6 { background:#1e1e20;}
 	/**/
-	.ps_box .pics_switch_clients { display:; width:100%; height:80px; position:absolute; left:0; bottom:0; overflow:hidden;}
+	.ps_box .pics_switch_clients { display:; width:100%;  position:absolute; left:0; bottom:0; overflow:hidden;}
 	.ps_box .pics_switch_clients ul { margin:20px auto 0; width:95px; height:auto; overflow:hidden;}
 	.ps_box .pics_switch_clients ul li { float:left; padding:20px 0; cursor:pointer; }
 	.ps_box .pics_switch_clients ul li span { display:block; margin-right:5px; width:20px; height:1px; text-indent:-999999px; background:#FFF;}
