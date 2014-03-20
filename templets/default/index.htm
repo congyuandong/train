@@ -6,9 +6,12 @@
   <meta name="description" content="{dede:global.cfg_description/}" />
   <meta name="keywords" content="{dede:global.cfg_keywords/}" />
   <link href="{dede:global.cfg_templets_skin/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+  <link href="{dede:global.cfg_templets_skin/}/style/pic.css" rel="stylesheet" media="screen" type="text/css" />
   <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
   <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/images/js/j.js" ></script>
   <script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/pic_scroll.js"></script>
+  <script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.easing.js"></script>
+  <script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/studio.js"></script>
   <script language="javascript" type="text/javascript">
 <!--
   $(function(){
@@ -63,21 +66,27 @@
         </dl>
         {/dede:channelartlist}
       </div>
-      <div class="serviceno"></div>
+      <div class="serviceno">
+         {dede:arclist typeid='12' limit='0,1'}
+         <a href="[field:arcurl/]">
+         <img src="[field:litpic/]"></a>  
+         {/dede:arclist}
+      </div>
       <div class="lec_signup">
         <div class="lecinfo">
-          <div class="title">后勤报修投诉平台用户培训讲座</div>
-          <span>
-            为方便师生进行网上报修，信息化处携手后勤集团，整合了
-水、电、暖、网络、固定电话、一卡通等维修类别中师生报
-修率最高的若干报修项目，使报修申请人只需登录.
-          </span>
+          {dede:arclist typeid='12' titlelen=48 limit='0,1'}
+          <div class="title">[field:title/]</div>
+          <span>[field:description/]</span>
+          {/dede:arclist}
         </div>
         <div class="signup">
-          <span>2013年04月06日</span>
-          <a href="http://www.baidu.com">
+          {dede:arclist typeid='12' limit='0,1'}
+          <span>[field:pubdate function='strftime("%Y年%m月%d日",@me)'/]</span>
+          {/dede:arclist}
+          <a href="{dede:global.cfg_cmsurl/}/a/zaixianbaoming">
             <img src="{dede:global.cfg_templets_skin/}/images/signbtn.png"></a>
         </div>
+        
       </div>
     </div>
     <!-- /notice -->
@@ -218,7 +227,7 @@
       <div class="subsecright">
         {dede:arclist typeid='8' limit='6,1'}
         <a href="[field:arcurl/]">
-          <img src="[field:litpic/]" height="276" width="180" alt="{dede:global.cfg_webname/}"/>
+          <img src="[field:litpic/]" height="281" width="180" alt="{dede:global.cfg_webname/}"/>
         </a>
         <span>[field:title/]</span>
         <span>[field:writer/]</span>
