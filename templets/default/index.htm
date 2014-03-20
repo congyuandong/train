@@ -42,7 +42,7 @@
         <div class='newarticle'>最新文章</div>
         <ul class="liststyle listicon">
           <!--最新文档-->
-          {dede:arclist row=14 titlelen=32 noflag='h'}
+          {dede:arclist row=14 titlelen=48 noflag='h'}
           <li>
             <a href="[field:arcurl/]">[field:title/]</a>
           </li>
@@ -87,11 +87,11 @@
           {dede:type typeid='7'}
           <div class='secnumber'>共[field:id function="getTypeArcLength(@me,false)"/]门课程</div>
           {/dede:type} <strong>网络基础服务</strong>
-          {dede:arclist typeid='7'}
           <ul>
+            {dede:arclist typeid='7' limit='0,6'}
             <li>[field:textlink/]</li>
+            {/dede:arclist}
           </ul>
-          {/dede:arclist}
         </div>
         <div class="subsec_show">
           <div class="lshow">
@@ -132,15 +132,15 @@
     <div class="subsection graybg">
       <div class="subsecleft">
         <div class="subsec_list2">
-          {dede:type typeid='7'}
+          {dede:type typeid='8'}
           <div class='secnumber'>共[field:id function="getTypeArcLength(@me,false)"/]门课程</div>
           {/dede:type}
-          <strong>网络基础服务</strong>
-          {dede:arclist typeid='7'}
+          <strong>信息应用系统</strong>
           <ul>
+             {dede:arclist typeid='8' limit='0,6'}
             <li>[field:textlink/]</li>
+             {/dede:arclist}
           </ul>
-          {/dede:arclist}
         </div>
         <div class="subsec_show">
           <div class="lshow">
