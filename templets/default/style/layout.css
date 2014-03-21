@@ -55,11 +55,13 @@
 	margin:0 0 8px 0;
 	border-bottom:1px solid #DADADA;
 	overflow:hidden;
-	background:url(../images/green_skin.png) 0 -294px repeat-x;
+	/*background:url(../images/green_skin.png) 0 -294px repeat-x;*/
 }
 .tbox dt{
 	height:24px;
-	border:1px solid #DADADA;
+	border:1px solid #0096db;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #0096db;
 	overflow:hidden;
 	clear:both;
 }
@@ -77,7 +79,7 @@
 	padding-right:4px;
 	display:block;
 	float:left;
-	color:#316301;
+	color:#ffffff;
 	letter-spacing:1px;
 }
 .tbox dt strong a{
@@ -92,10 +94,10 @@
 	position:relative;
 	line-height:25px;
 	padding-right:8px;
-	color:#596F37;
+	color:#ffffff;
 }
 .tbox dt span.more a{
-	color:#596F37;
+	color:#ffffff;
 	text-decoration:none;
 }
 .tbox dt span.more a:hover{
@@ -122,7 +124,7 @@
 	letter-spacing:1px;
 }
 .tbox dt span.label a:hover{
-	color:#360;
+	color:#fff;
 }
 .tbox dt span.label a.thisclass{
 	background:#FFF;
@@ -166,19 +168,19 @@
 }
 .light dt{
 	height:24px;
-	border:1px solid #DADADA;
+	/*border:1px solid #DADADA;*/
 	overflow:hidden;
-	background:url(../images/green_skin.png) 0 -188px repeat-x;
+	/*background:url(../images/green_skin.png) 0 -188px repeat-x;*/
 	clear:both;
 }
 .light dd{
-	border-left:1px solid #DADADA;
-	border-right:1px solid #DADADA;
+	/*border-left:1px solid #DADADA;
+	border-right:1px solid #DADADA;*/
 	/*padding:4px 4px 0px;*/
 	overflow:hidden;
 }
 dt.light strong{
-	color:#316301;
+	/*color:#316301;*/
 }
 /*--------------------------------------------------
  box layout (prefix space:a,b)
@@ -336,6 +338,7 @@ dt.light strong{
 .e1 li span{
 	
 }
+
 .e2{
 	
 }
@@ -343,9 +346,9 @@ dt.light strong{
 	width:100%;
 	overflow:hidden;
 	clear:both;
-	padding:12px 0px;
+	padding:8px 0px;
 	border-bottom:1px solid #EEE;
-	color:#aaa;
+	color:#555;
 }
 .e2 li b a{
 	color:#555;
@@ -378,23 +381,24 @@ dt.light strong{
 .e2 span.info{
 	display:block;
 	line-height:23px;
-	color:#555;
+	color:#aaa;
 	padding-left:12px;
+	font-size:12px;
 }
 .e2 span.info small{
 	color:#AAA;
-	font-size:12px;
 	margin-left:3px;
 }
 .e2 span.info a{
 	color:#690;
 }
 .e2 p.intro{
-	color:#776955;
-	line-height:20px;
-	margin-left:5px;
-	padding-left:10px;
+	color:#aaa;
+	line-height:24px;
+	margin-left:10px;
+	padding-left:94px;
 	padding-right:10px;
+	font-size: 12px;
 }
 .e3{/* 图文混排小列表 */	
 	clear:both;
@@ -708,29 +712,33 @@ dt.light strong{
 .d6{
 	width:100%;
 	overflow:hidden;
-	padding-bottom:6px;
+	/*padding-bottom:6px;*/
 	clear:both;
 	display:inherit;
 	}
 .d6 li{
 	float:left;
-	margin:6px 0 1px 8px;
+	margin:6px 5px 6px 6px;
 	display:inline;
 	}
 .d6 li a{
-	width:87px;
-	padding-left:20px;
+	width:108px;
+	/*padding-left:20px;*/
 	height:26px;
+	text-align: center;
 	line-height:26px;
 	display:block;
-	background:url(../images/green_skin.png) -42px -222px no-repeat;
-	color:#316301;
+	border-radius: 10px;
+	background: #9cdcf4;
+	/*background:url(../images/green_skin.png) -42px -222px no-repeat;*/
+	color:#105caa;
 	}
 .d6 li a:hover{
 	text-decoration:none;
 	}	
 .d6 li a.thisclass{
-	background:url(../images/green_skin.png) -42px -249px no-repeat;
+	background-color: #0293cb;
+	/*background:url(../images/green_skin.png) -42px -249px no-repeat;*/
 	}
 /*-------------------------------------------------- 
  list icon

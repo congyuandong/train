@@ -4,33 +4,34 @@
  **/
 
 .pleft{
-	width:712px;
+	width:752px;
 	float:left;
 	overflow:hidden;
 }
 .pleft .place{
-	width:712px;
+	width:752px;
 	height:24px;
 	line-height:24px;
-	background:transparent url(../images/green_skin.png) repeat-x scroll 0 -188px;
-	border-top:1px solid #BADAA1;
-	border-bottom:1px solid #BADAA1;
+	background: #0096db;
+	border-top:1px solid #0096db;
+	border-bottom:1px solid #0096db;
+	border-radius: 5px 5px 0 0;
 	text-indent:12px;
-	color:#428C5B;
+	color:#ffffff;
 	overflow:hidden;
 }
 .pleft .place strong{
-	color:#428c5b;
+	color:#ffffff;
 	font-weight:normal;
 	letter-spacing:1px;
 }
 .pleft .place a{
-	color:#428c5b;
+	color:#ffffff;
 	margin:0px 2px;
 }
 .pleft .place a:hover{
 	color:#ff3333;
-	text-decoration:none;
+	text-decoration:underline;
 }
 .pleft .place small{
 	display:inline-block;
@@ -39,9 +40,9 @@
 	height:20px;
 	*height:24px;
 	overflow:hidden;
-	background:url(../images/ico-3.gif) 2px 8px no-repeat;
 	font-size:0px;
 }
+
 .place{
 	height:24px;
 	line-height:24px;
@@ -52,7 +53,7 @@
 	border-bottom:1px solid #BADAA1;
 	overflow:hidden;
 	font-family:宋体;
-	margin-bottom:6px;
+	margin-bottom:0px;
 	text-align:left;
 }
 .place strong{
@@ -78,14 +79,14 @@
 }
 .dede_pages ul{
 	float:left;
-	padding:12px 0px 12px 16px;
+	padding:12px 0px 12px 0px;
 }
 .dede_pages ul li{
 	float:left;
 	font-family:Tahoma;
 	line-height:17px;
 	margin-right:6px;
-	border:1px solid #E9E9E9;
+	border:0px solid #E9E9E9;
 }
 .dede_pages ul li a{
 	float:left;
@@ -106,7 +107,7 @@
 }
 .dede_pages .pageinfo{
 	line-height:21px;
-	padding:12px 10px 12px 16px;
+	padding:12px 10px 12px 10px;
 	color:#999;
 }
 .dede_pages .pageinfo strong{
@@ -450,7 +451,7 @@
 	text-decoration: none;
 }
 .subsection  ul li a:hover{
-	color: #0b4a00;
+	color: #105caa;
 }
 .subsection .subsec_show{
 	width: 100%;
@@ -472,7 +473,7 @@
 }
 .subsection span{
 	font-family: 黑体;
-	font-size:12px;
+	font-size:14px;
 	color:#000000;
 	line-height: 24px;
 	display: block;;
@@ -502,8 +503,11 @@
 }
 
 .listbox{
-	width:720px;
-	overflow:hidden;
+	width:750px;
+	border-style:solid;
+	border-color:#f0f0f0;
+	border-width: 0px 1px 1px 1px; 
+	border-radius: 0 0 5px 5px ;
 	float:left;
 	clear:both;
 	overflow:hidden;
@@ -741,9 +745,12 @@
 
 /*---------- viewbox ---------*/
 .viewbox{
-	width:712px;
+	width:750px;
 	overflow:hidden;
 	padding-bottom:8px;
+	border-style:solid;
+	border-color:#f0f0f0;
+	border-width: 0px 1px 1px 1px; 
 }
 .viewbox .title{
 	height:56px;
@@ -761,13 +768,14 @@
 	line-height:17px;
 	text-align:center;
 	overflow:hidden;
+	font-size:12px;
 	color:#666;
 }
 .viewbox .info small{
 	margin-left:8px;
 	margin-right:3px;
 	color:#999;
-	font-size:12px;
+	/*font-size:12px;*/
 }
 .viewbox .info a{
 	color:#690;
@@ -958,7 +966,7 @@
 }
 .viewbox .handle{
 	height:59px;
-	padding-top:12px;
+	padding-top:0px;
 	overflow:hidden;
 	clear:both;
 }
@@ -1624,7 +1632,7 @@
 }
 .dcmp-post .dcmp-submit{
 	float:left;
-	padding-top:6px;
+	padding-top:0px;
 }
 .dcmp-post .dcmp-submit input,.dcmp-post .dcmp-submit button{
 	vertical-align:middle;
@@ -1633,11 +1641,13 @@
 	width:70px;
 	height:25px;
 	border:none;
-	background:url(../images/btn-bg2.gif) no-repeat;
+	/*background:url(../images/btn-bg2.gif) no-repeat;*/
+	background: #9cdcf4;
+	border-radius: 5px;
 	line-height:25px;
 	letter-spacing:1px;
 	overflow:hidden;
-	color:#444;
+	color:#000;
 	cursor:pointer;
 	margin-left:5px;
 
