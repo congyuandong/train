@@ -512,6 +512,10 @@
 	clear:both;
 	overflow:hidden;
 }
+.bn{
+	border-width: 0px !important; 
+	width:1000px !important;
+}
 .index .listbox dl{
 	width:352px;
 	margin-right:8px;
