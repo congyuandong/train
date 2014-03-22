@@ -269,3 +269,17 @@ if( file_exists(DEDEINC.'/extend.func.php') )
 {
     require_once(DEDEINC.'/extend.func.php');
 }
+
+
+/* 
+* 返回符合记录的文章数量 
+* @description DEDE不允许执行子查询，解决栏目下文章统计的问题 
+* @param $level 为真时查询所有子类目 
+* */ 
+function getTotalArcByTid($tid, $level=TRUE) { 
+global $dsql; 
+$level==TRUE && $tid = GetSonTypeID($tid); 
+$sql = "SELECT count(id) as total from `dede_archives` where typeid in($tid)"; 
+$result = $dsql->GetOne($sql); 
+return $result['total']; 
+} 

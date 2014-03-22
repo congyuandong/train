@@ -39,6 +39,7 @@ input,select,button{
 	vertical-align:middle;
 }
 /*---------- stock ---------*/
+
 .center{
 	margin:4px auto;
 }
@@ -110,7 +111,9 @@ input,select,button{
 	width:70px;
 	height:25px;
 	border:none;
-	background:url(../images/btn-bg2.gif) left top no-repeat;
+	background: #9cdcf4;
+	border-radius: 5px;
+	/*background:url(../images/btn-bg2.gif) left top no-repeat;*/
 	line-height:25px;
 	overflow:hidden;
 	color:#444;
@@ -182,12 +185,12 @@ input,select,button{
 }
 .header .title{
 	float:left;
-	padding-left:10px;
+	padding-left:0px;
 
 }
 .header .title h1 a{
-	width:216px;
-	height:54px;
+	width:1000px;
+	height:109px;
 	display:block;
 	overflow:hidden;
 }
@@ -218,7 +221,7 @@ input,select,button{
 
 .header .welcome{
 	float:right;
-	margin-top:20px;
+	margin-top:-20px;
 	padding-right:10px;
 	color:#999;
 }
@@ -651,13 +654,15 @@ input,select,button{
 /*---------- frame : footer ---------*/
 .footer{
 	margin:auto;
-	color:#383839;
-	background-color: #e4e3e3;
+	color:#999;
 	text-align:center;
 	margin-top:0px;
 	padding-bottom:10px;
 	border-top:1px solid #E5EFD6;
 	padding-top:10px;
+}
+.footerbg{
+	background-color: #e4e3e3;
 }
 .footer .link{
 	text-align:center;
@@ -678,7 +683,7 @@ input,select,button{
 	color:#F93;
 }
 .footer .copyright{
-	color:#383839;
+	color:#666666;
 	line-height:23px;
 }
 
@@ -721,7 +726,8 @@ input,select,button{
 	line-height:32px;
 	background:transparent url(../images/search-top-bg.gif) repeat-x scroll;
 	text-indent:12px;
-	color:#428C5B;
+	color:#0096db;
+	margin-top: 2px;
 	border-bottom: 1px solid #E4E4E4;
 	border-top: 1px solid #E4E4E4;
  }

@@ -1,6 +1,6 @@
 <?php
 //数据库连接信息
-$cfg_dbhost = '222.27.254.36';
+$cfg_dbhost = 'localhost';
 $cfg_dbname = 'dedecms_train';
 $cfg_dbuser = 'root';
 $cfg_dbpwd = '123';
