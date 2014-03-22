@@ -427,6 +427,7 @@ input,select,button{
 	border-radius:20px;
 	background:url(../images/topsearch.png) no-repeat;
 	color:#ffffff;
+	outline: none;
 }
 .search-keyword {
 	width:210px;

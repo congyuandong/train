@@ -40,7 +40,7 @@
 /******************** home ********************/
 	/**/
 	.ps_box { margin-bottom:50px;}
-	.pics_switch { position:relative; width:693px; margin:auto; height:366px; background:#1b1c24; overflow:hidden;}
+	.pics_switch { position:relative; width:693px; margin:auto; height:366px;  overflow:hidden;}
 	.pics_switch .pb { height:580px;}
 	.pics_switch .pic_box { /*position:absolute; left:0; top:0;*/ float:left; width:693px; height:366px; overflow:hidden;}
 	.pics_switch .pic_box a { margin:auto; display:block; width:693px; height:366px;}
