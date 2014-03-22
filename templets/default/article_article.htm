@@ -108,13 +108,13 @@ function getDigg(aid)
   <!-- /info -->
   {dede:field.description runphp='yes'}
   if(@me<>'' )@me = '
-  <div class="intro">'.@me.'</div>
+  <!--div class="intro">'.@me.'</div-->
   ';
   {/dede:field.description}
   <div class="content">
    <table width='100%'>
     <tr>
-     <td><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;">{dede:myad name='contentMidPicAD'/}</div>
+     <td><!--div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;">{dede:myad name='contentMidPicAD'/}</div-->
       {dede:field.body/}
       {dede:field.vote/}
       (责任编辑：{dede:adminname/})</td>
@@ -201,7 +201,7 @@ function getDigg(aid)
     </dd>
    </dl>
   </div>
-  <div id="contentRtPicAD" style="margin:10px auto">{dede:myad name='contentRtPicAD'/}</div>
+  <!--div id="contentRtPicAD" style="margin:10px auto">{dede:myad name='contentRtPicAD'/}</div-->
   <div class="commend mt1">
    <dl class="tbox light">
     <dt class='light'><strong>推荐内容</strong></dt>
@@ -229,11 +229,11 @@ function getDigg(aid)
     </dd>
    </dl>
   </div>
-  <div id="contentRtPicAD2" style="margin:10px auto">{dede:myad name='contentRtPicAD2'/}</div>
+  <!--div id="contentRtPicAD2" style="margin:10px auto">{dede:myad name='contentRtPicAD2'/}</div-->
  </div>
  <!-- /pright -->
 </div>
-<div id="innerfooterAD2" style="margin:10px auto; width:726px">{dede:myad name='innerfooterAD2'/}</div>
+<!--div id="innerfooterAD2" style="margin:10px auto; width:726px">{dede:myad name='innerfooterAD2'/}</div-->
 {dede:include filename="footer.htm"/}
 <!-- /footer -->
 </body>
